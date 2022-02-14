@@ -106,99 +106,96 @@
 	    grid-column: col-start / span 12;
 	}
 	.side-content1, .side-content2 {
-		  display: flex;
-	    flex-direction: column;
-	    padding: 10px;
-	    font-size: 17px;
-		  background-color: #e8e8e8;
-      position: relative;
-		}
-    .side-content1 h1{
-      position: relative;
-      top: 0px;
-      color: #fff;
-      background-color: #04AA6D;
-      border-radius: 20px;
-      margin-bottom: 25px;
-    }
-    .side-content1 h2, .side-content2 h2{
-      color: #000;
-      margin-bottom: 20px;
-    }
-    .side-content2 .rodada{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    .side-content2 .rodada button{
-      border: none;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      color: #fff;
-      background-color: #351b46;
-      font-weight: bold;
-      margin: 5px;
-      cursor: pointer;
-    }
-		.main-content {
-		  overflow-x: auto;
-		  background-color: #e8e8e8;
-		}
-		.main-content table {
-		  border-collapse: collapse;
-		  border-spacing: 0;
-		  width: 100%;
-		  border: 1px solid #ddd;
-		}
+		display: flex;
+	  flex-direction: column;
+	  padding: 10px;
+	  font-size: 17px;
+		background-color: #e8e8e8;
+    position: relative;
+	}
+  .side-content1 h1{
+    position: relative;
+    top: 0px;
+    color: #fff;
+    background-color: #04AA6D;
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+  .side-content1 h2, .side-content2 h2{
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .side-content2 .rodada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .side-content2 .rodada button{
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #351b46;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+  }
+	.main-content {
+	  overflow-x: auto;
+	  background-color: #e8e8e8;
+	}
+	.main-content table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	  width: 100%;
+	  border: 1px solid #ddd;
+	}
+	.main-content table th, .main-content table td {
+	  text-align: left;
+	  padding: 8px;
+	}
+  .main-content table tr:nth-child(odd){
+    background-color: #fff;
+  }
+	.main-content table tr:nth-child(even){
+		background-color: #f2f2f2;
+	}
 
-		.main-content table th, .main-content table td {
-		  text-align: left;
-		  padding: 8px;
-		}
-
-    .main-content table tr:nth-child(odd){
-      background-color: #fff;
-    }
-
-		.main-content table tr:nth-child(even){
-			background-color: #f2f2f2;
-		}
-
-    .main-content table th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-      background-color: #04AA6D;
-      color: white;
-    }
+  .main-content table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
 	@media screen and (min-width: 500px) {
-		  .side-content1{
-		  	grid-column: col-start / span 6;
-        	grid-row: 2 / 4;
-		  }
-		  .side-content2{
-		  	grid-column: col-start / span 6;
-        	grid-row: 4 / 6;
-		  }
-		  .main-content {
-		    grid-column: col-start 7 / span 6;
-		    grid-row: 2 / 6;
-		  }
-		}
-		@media screen and (min-width: 700px) {
-		  .side-content1{
-		  	grid-column: col-start / span 5;
-        	grid-row: 2 / 4;
-		  }
-		  .side-content2{
-		  	grid-column: col-start / span 5;
-        	grid-row: 4 / 6;
-		  }
-		  .main-content {
-		    grid-column: col-start 6 / span 7;
-		    grid-row: 2 / 6;
-		  }
-		}
+	  .side-content1{
+	  	grid-column: col-start / span 6;
+    	grid-row: 2 / 4;
+	  }
+	  .side-content2{
+	  	grid-column: col-start / span 6;
+    	grid-row: 4 / 6;
+	  }
+	  .main-content {
+	    grid-column: col-start 7 / span 6;
+	    grid-row: 2 / 6;
+	  }
+	}
+	@media screen and (min-width: 700px) {
+	  .side-content1{
+	  	grid-column: col-start / span 5;
+    	grid-row: 2 / 4;
+	  }
+	  .side-content2{
+	  	grid-column: col-start / span 5;
+    	grid-row: 4 / 6;
+	  }
+	  .main-content {
+	    grid-column: col-start 6 / span 7;
+	    grid-row: 2 / 6;
+	  }
+	}
 </style>

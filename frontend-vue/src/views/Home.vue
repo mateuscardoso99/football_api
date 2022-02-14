@@ -1,8 +1,8 @@
 <template>
 	<div class="content">
-		<navbar></navbar>
-		<grid></grid>
-  	<footer-component></footer-component>
+    <navbar></navbar>
+    <grid></grid>
+    <footer-component></footer-component>
 	</div>
 </template>
 
